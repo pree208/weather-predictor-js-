@@ -8,7 +8,7 @@ class UI {
     this.icon = document.getElementById('w-icon');
     this.humidity = document.getElementById('w-humidity');
     this.feelsLike = document.getElementById('w-feels-like');
-    this.pressure = document.getElementById('w-dewpoint');
+    this.pressure = document.getElementById('w-pressure');
     this.wind = document.getElementById('w-wind');
   }
 
