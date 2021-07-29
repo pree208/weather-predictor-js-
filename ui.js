@@ -1,6 +1,7 @@
 class UI {
   constructor() {
     this.location = document.getElementById('w-location');
+    this.state = document.getElementById('w-state');
     this.desc = document.getElementById('w-desc');
     this.string = document.getElementById('w-string');
     this.details = document.getElementById('w-details');
@@ -12,7 +13,8 @@ class UI {
   }
 
   paint(weather) {
-    this.location.textContent = `${weather.name},${weather.state}`;
+    this.location.textContent = `${weather.name},`;
+    this.state.textContent = `${weather.state}`;
     this.desc.textContent = weather.weather[0].description;
     this.string.textContent = `temp: ${weather.main.temp} `;
     this.icon.setAttribute('src', `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
